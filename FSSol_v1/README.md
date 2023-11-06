@@ -15,7 +15,7 @@ JUST TRY TO RUN FSSol_v1.m IN MATLAB ENVIRONMENT TO TEST THE CODE.
 *********************************
 # NECESSARY STEPS TO RUN THE SCRIPT 
 *********************************
-0) **Generate the stress and strain tensors result files and copy them into the Results folder**
+0) **Generate the stress and strain tensors result files and copy them into the "Results" folder**
 
 >*Only in the case of Ansys Workbench you can use the ready-to-use code provided (ANSYS_Post_Process_Results.mac). If another FEM software is used you have to export stress and strain results by creating .csv files structured as the ones contained in **Results** folder*
 >- 0.1) Create a Named Selection called "Nodes_Circ" and select all the nodes that have to be evaluated through the critical plane method
