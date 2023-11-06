@@ -1,0 +1,72 @@
+/post26
+
+NUMVAR, 200
+CMSEL, S, Nodes_Circ, Node
+
+*get,numnodi,node,,count
+*do,i,1,numnodi
+*get,nummin,node,,num,min
+
+
+ansol,20,nummin,epel,x ,
+ansol,21,nummin,epel,y ,
+ansol,22,nummin,epel,z ,
+ansol,23,nummin,epel,xy,
+ansol,24,nummin,epel,yz,
+ansol,25,nummin,epel,xz,
+
+ansol,30,nummin,eppl,x ,
+ansol,31,nummin,eppl,y ,
+ansol,32,nummin,eppl,z ,
+ansol,33,nummin,eppl,xy,
+ansol,34,nummin,eppl,yz,
+ansol,35,nummin,eppl,xz,
+
+ansol,40,nummin,s,x 
+ansol,41,nummin,s,y 
+ansol,42,nummin,s,z 
+ansol,43,nummin,s,xy
+ansol,44,nummin,s,yz
+ansol,45,nummin,s,xz
+
+
+
+nsel,u,node,,nummin
+
+
+*DEL,EXPORT
+*DIM,EXPORT,ARRAY,15,20
+VGET,EXPORT(1,1), 20
+VGET,EXPORT(1,2), 21
+VGET,EXPORT(1,3), 22
+VGET,EXPORT(1,4), 23
+VGET,EXPORT(1,5), 24
+VGET,EXPORT(1,6), 25
+VGET,EXPORT(1,7), 30
+VGET,EXPORT(1,8), 31
+VGET,EXPORT(1,9), 32
+VGET,EXPORT(1,10),33
+VGET,EXPORT(1,11),34
+VGET,EXPORT(1,12),35
+VGET,EXPORT(1,13),40
+VGET,EXPORT(1,14),41
+VGET,EXPORT(1,15),42
+VGET,EXPORT(1,16),43
+VGET,EXPORT(1,17),44
+VGET,EXPORT(1,18),45
+
+*DEL,EX_time
+*DIM,EX_time,ARRAY,15,20
+VGET,EX_time(1,1),1 
+
+/OUTPUT,'risultati_%nummin%','csv','.'   
+*VWRITE,'Node',nummin, 
+%C, %G 
+*VWRITE,'TIME','epelx ','epely ','epelz ','epelxy','epelyz','epelxz','epplx ','epply ','epplz ','epplxy','epplyz','epplxz','sx','sy ','sz ','sxy','syz','sxz'
+%C, %C, %C, %C, %C, %C, %C, %C, %C, %C, %C, %C, %C, %C, %C, %C, %C, %C, %C
+*VWRITE,EX_time(1,1),EXPORT(1,1),EXPORT(1,2), EXPORT(1,3), EXPORT(1,4), EXPORT(1,5), EXPORT(1,6), EXPORT(1,7), EXPORT(1,8), EXPORT(1,9), EXPORT(1,10),EXPORT(1,11),EXPORT(1,12),EXPORT(1,13),EXPORT(1,14),EXPORT(1,15),EXPORT(1,16),EXPORT(1,17),EXPORT(1,18)
+%G, %G, %G, %G, %G, %G, %G, %G, %G, %G, %G, %G, %G, %G, %G, %G, %G, %G, %G    
+/OUTPUT,TERM
+
+
+*enddo
