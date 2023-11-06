@@ -6,7 +6,7 @@ JUST TRY TO RUN FSSol_v1.m IN MATLAB ENVIRONMENT TO TEST THE CODE.
 # DESCRIPTION OF THE FILES 
 ************************
 
-- **ANSYS_Post_Process_Results.mac** = APDL command necessary for a correct post-processing of results in Ansys (it can be used only in Ansys, if any other FEM software is used you need to correctly post-process results as the ones contained in the "FEM_results" folder)
+- **ANSYS_Post_Process_Results.mac** = APDL command necessary for a correct post-processing of results in Ansys (it can be used only in Ansys, if any other FEM software is used you need to correctly post-process results as the ones contained in the "Results" folder)
 
 - **FSSol_v1.m** = main Matlab function to be run
 
