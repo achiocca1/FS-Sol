@@ -6,7 +6,7 @@ Closed form solution of critical plane factor of Fatemi-Socie in its general for
 
 The mathematical procedure is described in the article:
 
-**A. Chiocca, F. Frendo, G. Marulo, "An efficient algorithm for critical plane factors evaluation", International Journal of Mechanical Sciences, Volume 242, 2023, 10.1016/j.ijmecsci.2022.107974.**
+**A. Chiocca, F. Frendo, G. Marulo, "Closed-form solution for the Fatemi-Socie extended parameter in case of linear elasticity and proportional loading",  Fatigue & Fracture of Engineering Materials & Structures , 2023, doi.org/10.1111/ffe.14153.**
 
 Bug reports and suggestions are welcome! 
 This software is regularly maintained.
