@@ -1,6 +1,6 @@
 # FS-Sol
 
-Closed form solution of critical plane factor of Fatemi-Socie in its general formulation. The algorithm works under the hypoteses of linear-elasticity and proportional loading.
+Closed form solution of critical plane factor of Fatemi-Socie in its general formulation. The algorithm works under the hypotheses of linear-elasticity and proportional loading.
 
 - FSSol_v1.0 (it includes *Fatemi-Socie* critical plane factor)
 
