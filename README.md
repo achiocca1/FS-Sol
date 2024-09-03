@@ -1,8 +1,6 @@
 # FS-Sol
 
-Closed form solution of critical plane factor of Fatemi-Socie in its general formulation. The algorithm works under the hypotheses of linear-elasticity and proportional loading.
-
-- FSSol_v1.0 (it includes *Fatemi-Socie* critical plane factor)
+This repository contains the FS-Sol method, a closed-form solution for efficiently evaluating critical plane factors based on the Fatemi-Socie extended criterion. Designed for isotropic linear-elastic materials under proportional loading, FS-Sol significantly reduces computation time compared to standard plane scanning methods, making it ideal for analyzing complex geometries and loading conditions. The repository includes the algorithm, validation data, and example cases, offering a valuable tool for fatigue analysis.
 
 The mathematical procedure is described in the article:
 
